@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  transition: 0.3s ease-in-out;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+nav ul {
+  list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+  background-image: url("../../assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Work sans";
+  font-weight: bold;
+  font-size: 14px;
+  padding: 2rem;
+}
+body main {
+  background-color: hsl(0, 0%, 100%);
+  width: 32rem;
+  height: 27rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 3rem -1.5rem;
+  overflow: auto;
+  scrollbar-color: pink hotpink;
+}
+body main .logo {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+body main .logo h1 {
+  font-size: 2.5rem;
+}
+body main .relative {
+  margin-bottom: 2rem;
+  position: relative;
+  border-bottom: 0.1px solid #ededed;
+}
+body main .relative p:first-child:hover {
+  color: #ad28eb;
+  cursor: pointer;
+}
+body main .relative p:last-child {
+  font-size: 12.5px;
+}
+body main .relative img {
+  position: absolute;
+  top: -0.3rem;
+  right: -1.5rem;
+}
+body main .relative img:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  body main {
+    width: 27rem;
+    height: 22rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  body {
+    background-image: url("../../assets/images/background-pattern-mobile.svg");
+    background-size: 100% 100%;
+    background-position: 0 -15rem;
+  }
+  body main {
+    width: 20rem;
+    height: 30rem;
+  }
+}
